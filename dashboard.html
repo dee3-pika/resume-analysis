@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard - ResumeAnalyzer</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 text-gray-900">
+
+  <!-- Navbar -->
+  <nav class="bg-white shadow">
+    <div class="container mx-auto px-4 py-2 flex justify-between items-center">
+      <a href="#" class="text-xl font-bold text-blue-600">ResumeAnalyzer</a>
+      <div class="hidden md:flex">
+        <a href="index.html" class="text-gray-700 hover:text-blue-600 px-4">Home</a>
+        <a href="#features" class="text-gray-700 hover:text-blue-600 px-4">Features</a>
+        <a href="upload.html" class="text-gray-700 hover:text-blue-600 px-4">Upload Resume</a>
+        <a href="dashboard.html" class="text-gray-700 hover:text-blue-600 px-4">Dashboard</a>
+        <a href="#" class="text-gray-700 hover:text-blue-600 px-4">Contact</a>
+      </div>
+      <div class="md:hidden">
+        <button class="text-gray-700 focus:outline-none">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="md:hidden">
+    <a href="index.html" class="block text-gray-700 hover:text-blue-600 px-4 py-2">Home</a>
+    <a href="#features" class="block text-gray-700 hover:text-blue-600 px-4 py-2">Features</a>
+    <a href="upload.html" class="block text-gray-700 hover:text-blue-600 px-4 py-2">Upload Resume</a>
+    <a href="dashboard.html" class="block text-gray-700 hover:text-blue-600 px-4 py-2">Dashboard</a>
+    <a href="#" class="block text-gray-700 hover:text-blue-600 px-4 py-2">Contact</a>
+  </div>
+
+  <!-- Dashboard Section -->
+  <section id="dashboard" class="py-20">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-bold mb-8 text-center">Dashboard</h2>
+      <div class="bg-white shadow-md rounded p-8">
+        <h3 class="text-2xl font-bold mb-4">Parsed Resume Information</h3>
+        
+        <!-- Personal Information -->
+        <div class="mb-6">
+          <h4 class="text-xl font-semibold mb-2">Personal Information</h4>
+          <div class="bg-gray-100 p-4 rounded">
+            <p><strong>Name:</strong> John Doe</p>
+            <p><strong>Email:</strong> john.doe@example.com</p>
+            <p><strong>Phone:</strong> (123) 456-7890</p>
+            <p><strong>LinkedIn:</strong> linkedin.com/in/johndoe</p>
+          </div>
+        </div>
+
+        <!-- Experience -->
+        <div class="mb-6">
+          <h4 class="text-xl font-semibold mb-2">Experience</h4>
+          <div class="bg-gray-100 p-4 rounded">
+            <p><strong>Software Engineer at ABC Corp</strong></p>
+            <p>Jan 2020 - Present</p>
+            <p>- Developed and maintained web applications using JavaScript and React.</p>
+            <p>- Improved system performance by 20% through code optimization.</p>
+          </div>
+          <div class="bg-gray-100 p-4 rounded mt-4">
+            <p><strong>Junior Developer at XYZ Inc</strong></p>
+            <p>Jun 2018 - Dec 2019</p>
+            <p>- Assisted in the development of internal tools using Python and Django.</p>
+            <p>- Participated in code reviews and team meetings.</p>
+          </div>
+        </div>
+
+        <!-- Education -->
+        <div class="mb-6">
+          <h4 class="text-xl font-semibold mb-2">Education</h4>
+          <div class="bg-gray-100 p-4 rounded">
+            <p><strong>Bachelor of Science in Computer Science</strong></p>
+            <p>University of Technology, 2014 - 2018</p>
+          </div>
+        </div>
+
+        <!-- Skills -->
+        <div
